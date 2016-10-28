@@ -2,11 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="projeto1"/>
 			<item value="projeto.lsi"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="testando"/>
+			<item value="teste"/>
 			<item value="sistema-de-controle-de-recargas"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -46,6 +49,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\curso-git\repositorio"/>
+			<item value="D:\repositorio\projeto-lsi\sistema-de-controle-de-recargas"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
