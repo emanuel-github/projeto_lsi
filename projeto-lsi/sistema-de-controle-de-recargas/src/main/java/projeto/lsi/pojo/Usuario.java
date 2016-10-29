@@ -8,8 +8,14 @@ public class Usuario {
 	private String login;
 	private String senha;
 	
+	
 		
 		
+	@Override
+	public String toString() {
+		return "Usuario [idUsuario: " + idUsuario + ", nome: " + nome + ", email: " + email + ", login: " + login + "]";
+	}
+
 	public String getSenha() {
 		return senha;
 	}
@@ -24,7 +30,7 @@ public class Usuario {
 	}
 
 
-	public void setIdUsuario(int idUsuario) {
+	public void setIdUsuario(Integer idUsuario) {
 		this.idUsuario = idUsuario;
 	}
 

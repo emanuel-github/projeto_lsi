@@ -1,0 +1,5 @@
+package projeto.lsi.DAO;
+
+public class CartuchoDAO {
+
+}

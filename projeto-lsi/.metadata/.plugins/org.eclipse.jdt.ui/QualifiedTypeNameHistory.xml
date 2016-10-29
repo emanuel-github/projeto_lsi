@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="projeto.lsi.DAO.GenericoDAO"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="projeto.lsi.DAO.UsuarioDAO"/>
+<fullyQualifiedTypeName name="projeto.lsi.conexao.ConexaoFactory"/>
+<fullyQualifiedTypeName name="projeto.lsi.Exception.PersistenciaException"/>
+<fullyQualifiedTypeName name="projeto.lsi.pojo.Usuario"/>
+</qualifiedTypeNameHistroy>

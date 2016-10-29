@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+import projeto.lsi.Exception.PersistenciaException;
+
 public class ConexaoFactory {
 	
 	
@@ -23,10 +25,15 @@ public class ConexaoFactory {
 		return con;
 	}
 	
-	public Connection getConnection() throws ClassNotFoundException, SQLException {
-		Class.forName(config.getString("projeto.lsi.postgresql"));
-		return DriverManager.getConnection(config.getString("projeto.lsi.url.conexao.bd"), 
-				config.getString("projeto.lsi.usuario.bd"), config.getString("projeto.lsi.senha.bd"));
+	public Connection getConnection() throws PersistenciaException {
+		try {
+			Class.forName(config.getString("projeto.lsi.postgresql"));
+			return DriverManager.getConnection(config.getString("projeto.lsi.url.conexao.bd"), 
+					config.getString("projeto.lsi.usuario.bd"), config.getString("projeto.lsi.senha.bd"));
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new PersistenciaException("Erro de Persistencia");
+		}
 	}
 
 	
