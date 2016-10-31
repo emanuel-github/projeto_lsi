@@ -11,8 +11,6 @@ public class Recarga {
 	private Double pesoFinal;
 	private Integer idCartucho;
 	private Integer idToner;
-	private Cartucho cartucho;
-	private Toner toner;
 	
 	
 	
