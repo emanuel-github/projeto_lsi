@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.telaLoginController">
+   <children>
+      <Button fx:id="botaoCadastrarUsuario" layoutX="47.0" layoutY="159.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button fx:id="botaoEntrarLogin" layoutX="144.0" layoutY="159.0" mnemonicParsing="false" text="Entrar" />
+      <Label fx:id="loginLabel" layoutX="108.0" layoutY="20.0" text="Login" />
+      <Label fx:id="senhaLabel" layoutX="108.0" layoutY="95.0" text="Senha" />
+      <PasswordField fx:id="campoSenha" layoutX="47.0" layoutY="116.0" promptText="Digite senha" />
+      <TextField fx:id="campoLogin" layoutX="47.0" layoutY="50.0" promptText="Digite seu login" />
+   </children>
+</Pane>

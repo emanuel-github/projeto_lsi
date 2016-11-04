@@ -7,4 +7,10 @@
 <fullyQualifiedTypeName name="projeto.lsi.conexao.ConexaoFactory"/>
 <fullyQualifiedTypeName name="projeto.lsi.Exception.PersistenciaException"/>
 <fullyQualifiedTypeName name="projeto.lsi.pojo.Usuario"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+<fullyQualifiedTypeName name="javafx.application.Application"/>
+<fullyQualifiedTypeName name="javafx.scene.Parent"/>
 </qualifiedTypeNameHistroy>

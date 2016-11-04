@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="javaFX"/>
 			<item value="projeto1"/>
 			<item value="projeto.lsi"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="estudando-javaFX"/>
 			<item value="testando"/>
 			<item value="teste"/>
 			<item value="sistema-de-controle-de-recargas"/>
