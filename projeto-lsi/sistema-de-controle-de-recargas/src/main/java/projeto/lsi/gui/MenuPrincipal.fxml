@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.MenuPrincipalController">
+   <children>
+      <ImageView fx:id="imagemMenuPrincipal" fitHeight="371.0" fitWidth="399.0" opacity="0.37" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../imagens/ImagemMenuPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar fx:id="menuBarMenuPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="262.0">
+        <menus>
+            <Menu fx:id="menuUsuario" mnemonicParsing="false" text="Usuário">
+              <items>
+                <MenuItem fx:id="MenuItemConfContaUsuario" mnemonicParsing="false" text="Configurar Conta" />
+                  <MenuItem fx:id="menuItemSairContaUsuario" mnemonicParsing="false" text="Sair" />
+              </items>
+            </Menu>
+          <Menu fx:id="menuCliente" mnemonicParsing="false" text="Cliente">
+               <items>
+                  <MenuItem fx:id="menuItemCadastrarCliente" mnemonicParsing="false" text="Cadastrar" />
+                  <MenuItem fx:id="menuiItemPesquisarCliente" mnemonicParsing="false" text="Pesquisar" />
+               </items>
+          </Menu>
+          <Menu fx:id="menuServicos" mnemonicParsing="false" text="Serviços">
+               <items>
+                  <MenuItem fx:id="menuItemCartuchoServicos" mnemonicParsing="false" text="Cartucho" />
+                  <MenuItem fx:id="menuItemTonerServicos" mnemonicParsing="false" text="Toner" />
+                  <MenuItem fx:id="menuItemRecargaServicos" mnemonicParsing="false" text="Recarga" />
+               </items>
+          </Menu>
+          <Menu fx:id="menuRelatorios" mnemonicParsing="false" text="Relatórios">
+               <items>
+                  <MenuItem fx:id="menuItemRecCartRelatorios" mnemonicParsing="false" text="Recargas de Cartucho" />
+                  <MenuItem fx:id="menuItemRecTonerRelatorios" mnemonicParsing="false" text="Recargas de Toner" />
+                  <MenuItem fx:id="menuItemListaClientesRelatorios" mnemonicParsing="false" text="Listar Clientes" />
+                  <MenuItem fx:id="menuItemLucroTotalRelatorios" mnemonicParsing="false" text="Lucro total em Recargas" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="45.0" layoutY="218.0" prefHeight="93.0" prefWidth="303.0" text="New Print">
+         <font>
+            <Font size="64.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.47777777777777775" centerY="0.2142857142857143" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#30bad1" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

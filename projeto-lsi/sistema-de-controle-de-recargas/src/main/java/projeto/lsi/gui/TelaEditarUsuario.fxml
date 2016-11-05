@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="campoEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarUsuarioController">
+   <children>
+      <Button fx:id="botaoEditar" layoutX="180.0" layoutY="252.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="botaoCancelar" layoutX="71.0" layoutY="252.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="41.0" layoutY="44.0" text="Nome" />
+      <Label layoutX="41.0" layoutY="100.0" text="Email" />
+      <Label layoutX="42.0" layoutY="149.0" text="Login" />
+      <Label layoutX="40.0" layoutY="208.0" text="Senha" />
+      <TextField fx:id="campoNome" layoutX="90.0" layoutY="40.0" promptText="Digite seu nome " />
+      <TextField fx:id="campoEmail" layoutX="90.0" layoutY="96.0" promptText="Digite email" />
+      <TextField fx:id="campoLogin" layoutX="90.0" layoutY="145.0" promptText="Digite Login" />
+      <PasswordField fx:id="campoSenha" layoutX="90.0" layoutY="204.0" promptText="Digite Senha" />
+   </children>
+</Pane>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -7,11 +10,26 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="241.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.telaLoginController">
    <children>
-      <Button fx:id="botaoCadastrarUsuario" layoutX="47.0" layoutY="159.0" mnemonicParsing="false" text="Cadastrar" />
-      <Button fx:id="botaoEntrarLogin" layoutX="144.0" layoutY="159.0" mnemonicParsing="false" text="Entrar" />
-      <Label fx:id="loginLabel" layoutX="108.0" layoutY="20.0" text="Login" />
+      <ImageView fx:id="imagemMenuPrincipal" fitHeight="211.0" fitWidth="241.0" layoutX="2.0" layoutY="1.0" opacity="0.37" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../imagens/ImagemMenuPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoCadastrarUsuario" layoutX="47.0" layoutY="150.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button fx:id="botaoEntrarLogin" layoutX="144.0" layoutY="150.0" mnemonicParsing="false" text="Entrar" />
+      <Label fx:id="loginLabel" layoutX="108.0" layoutY="47.0" text="Login" />
       <Label fx:id="senhaLabel" layoutX="108.0" layoutY="95.0" text="Senha" />
       <PasswordField fx:id="campoSenha" layoutX="47.0" layoutY="116.0" promptText="Digite senha" />
-      <TextField fx:id="campoLogin" layoutX="47.0" layoutY="50.0" promptText="Digite seu login" />
+      <TextField fx:id="campoLogin" layoutX="47.0" layoutY="65.0" promptText="Digite seu login" />
+      <Label layoutX="178.0" layoutY="186.0" prefHeight="17.0" prefWidth="57.0" text="New Print">
+         <textFill>
+            <RadialGradient centerX="0.47777777777777775" centerY="0.2142857142857143" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#30bad1" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
    </children>
 </Pane>

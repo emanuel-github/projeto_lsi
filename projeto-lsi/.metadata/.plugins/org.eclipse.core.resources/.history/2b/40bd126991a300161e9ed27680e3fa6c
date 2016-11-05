@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="16.0" layoutY="34.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Editar Conta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="126.0" layoutY="34.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" text="Excluir Conta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="163.0" layoutY="122.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+</Pane>
