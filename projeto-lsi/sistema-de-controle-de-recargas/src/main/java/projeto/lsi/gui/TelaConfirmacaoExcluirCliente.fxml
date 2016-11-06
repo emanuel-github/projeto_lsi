@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaConfirmacaoExcluirClienteController">
+   <children>
+      <Label layoutX="47.0" layoutY="34.0" text="Deseja excluir o cliente?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="botaoConfirmar" layoutX="155.0" layoutY="74.0" mnemonicParsing="false" text="Ok" />
+      <Button fx:id="botaoCancelar" layoutX="54.0" layoutY="74.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+</Pane>
