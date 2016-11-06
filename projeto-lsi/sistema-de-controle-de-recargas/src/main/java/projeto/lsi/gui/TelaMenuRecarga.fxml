@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaMenuRecargaController">
+   <children>
+      <Label layoutX="116.0" layoutY="23.0" text="Menu Recarga" />
+      <Button fx:id="botaoCancelar" layoutX="220.0" layoutY="144.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoToner" layoutX="184.0" layoutY="60.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Toner" />
+      <Button fx:id="botaoCartucho" layoutX="35.0" layoutY="60.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Cartucho" />
+   </children>
+</Pane>

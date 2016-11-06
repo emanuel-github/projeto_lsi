@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasCartuchoController">
+   <children>
+      <DatePicker fx:id="dataFinal" layoutX="127.0" layoutY="132.0" />
+      <DatePicker fx:id="dataInicial" layoutX="127.0" layoutY="80.0" />
+      <Label layoutX="89.0" layoutY="24.0" text="Estatísticas de Recargas de Cartucho" />
+      <Button fx:id="botaoConsultar" layoutX="234.0" layoutY="193.0" mnemonicParsing="false" text="Consultar" />
+      <Button fx:id="botaoCancelar" layoutX="52.0" layoutY="193.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="58.0" layoutY="136.0" text="Data final" />
+      <Label layoutX="58.0" layoutY="84.0" text="Data inicial" />
+   </children>
+</Pane>

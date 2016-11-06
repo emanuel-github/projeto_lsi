@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaLucroEmRecargasController">
+   <children>
+      <Label layoutX="52.0" layoutY="88.0" text="Data inicial" />
+      <Label layoutX="52.0" layoutY="140.0" text="Data final" />
+      <Button fx:id="botaoCancelar" layoutX="46.0" layoutY="197.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoConsultar" layoutX="228.0" layoutY="197.0" mnemonicParsing="false" text="Consultar" />
+      <Label layoutX="120.0" layoutY="25.0" text="Lucro em Recargas" />
+      <DatePicker fx:id="dataInicial" layoutX="121.0" layoutY="84.0" />
+      <DatePicker fx:id="dataFinal" layoutX="121.0" layoutY="136.0" />
+   </children>
+</Pane>

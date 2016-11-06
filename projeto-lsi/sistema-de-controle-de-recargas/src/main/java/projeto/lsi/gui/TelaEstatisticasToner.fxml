@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasController">
+   <children>
+      <Label layoutX="66.0" layoutY="88.0" text="Data inicial" />
+      <Label layoutX="66.0" layoutY="140.0" text="Data final" />
+      <Button fx:id="botaoCancelar" layoutX="60.0" layoutY="197.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoConsultar" layoutX="242.0" layoutY="197.0" mnemonicParsing="false" text="Consultar" />
+      <Label layoutX="97.0" layoutY="28.0" text="Estatísticas de Recargas de Toner" />
+      <DatePicker fx:id="dataInicial" layoutX="135.0" layoutY="84.0" />
+      <DatePicker fx:id="dataFinal" layoutX="135.0" layoutY="136.0" />
+   </children>
+</Pane>
