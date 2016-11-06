@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaCadastrarCartuchoController">
+   <children>
+      <TextField fx:id="campoModelo" layoutX="144.0" layoutY="98.0" />
+      <TextField fx:id="campoPreco" layoutX="144.0" layoutY="162.0" />
+      <Label layoutX="102.0" layoutY="38.0" text="Cadastro de Cartuchos" />
+      <Label layoutX="80.0" layoutY="102.0" text="Modelo" />
+      <Label layoutX="29.0" layoutY="166.0" text="Preço da Recarga" />
+      <Button fx:id="botaoCancelar" layoutX="101.0" layoutY="241.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoCadastrar" layoutX="226.0" layoutY="241.0" mnemonicParsing="false" text="Cadastrar" />
+   </children>
+</Pane>

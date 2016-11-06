@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaPesquisarCartuchoController">
+   <children>
+      <Label layoutX="162.0" layoutY="32.0" text="Pesquisa de Cartucho" />
+      <Button fx:id="botaoCancelar" layoutX="314.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
+      <Button fx:id="botaoExcluir" layoutX="314.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Excluir" />
+      <Button fx:id="botaoEditar" layoutX="314.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Editar" />
+      <Button fx:id="botaoConsultar" layoutX="314.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Consultar" />
+      <TextField fx:id="campoPesquisa" layoutX="87.0" layoutY="65.0" prefHeight="25.0" prefWidth="198.0" promptText="Diigite modelo do cartucho" />
+      <ListView fx:id="listViewResultadosPesquisa" layoutX="42.0" layoutY="118.0" prefHeight="81.0" prefWidth="241.0" />
+      <Label layoutX="43.0" layoutY="69.0" text="Modelo" />
+   </children>
+</Pane>

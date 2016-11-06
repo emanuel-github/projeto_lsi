@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaMenuCartuchoController">
+   <children>
+      <Button fx:id="botaoCadastrar" layoutX="25.0" layoutY="59.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Cadastrar" />
+      <Button fx:id="botaoPesquisar" layoutX="174.0" layoutY="59.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Pesquisar" />
+      <Button fx:id="botaoCancelar" layoutX="210.0" layoutY="159.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="106.0" layoutY="22.0" text="Menu Cartucho" />
+   </children>
+</Pane>
