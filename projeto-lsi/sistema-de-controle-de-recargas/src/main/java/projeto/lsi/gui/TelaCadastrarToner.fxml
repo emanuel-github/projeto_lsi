@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaCadastrarTonerController">
+   <children>
+      <Button fx:id="botaoCadastrar" layoutX="236.0" layoutY="222.0" mnemonicParsing="false" text="Cadastrar" />
+      <Button fx:id="botaoCancelar" layoutX="111.0" layoutY="222.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="39.0" layoutY="147.0" text="Preço da Recarga" />
+      <Label layoutX="90.0" layoutY="83.0" text="Modelo" />
+      <Label layoutX="112.0" layoutY="19.0" text="Cadastro de Toners" />
+      <TextField fx:id="campoPreco" layoutX="154.0" layoutY="143.0" />
+      <TextField fx:id="campoModelo" layoutX="154.0" layoutY="79.0" />
+   </children>
+</Pane>
