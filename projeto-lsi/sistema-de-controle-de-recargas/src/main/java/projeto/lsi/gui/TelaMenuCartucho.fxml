@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaMenuCartuchoController">
    <children>
-      <Button fx:id="botaoCadastrar" layoutX="25.0" layoutY="59.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Cadastrar" />
-      <Button fx:id="botaoPesquisar" layoutX="174.0" layoutY="59.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Pesquisar" />
-      <Button fx:id="botaoCancelar" layoutX="210.0" layoutY="159.0" mnemonicParsing="false" text="Cancelar" />
-      <Label layoutX="106.0" layoutY="22.0" text="Menu Cartucho" />
+      <ImageView fitHeight="75.0" fitWidth="167.0" layoutY="1.0" opacity="0.58">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="95.0" layoutY="147.0" opacity="0.57" rotate="180.0">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoCadastrar" layoutX="25.0" layoutY="68.0" mnemonicParsing="false" onAction="#cadastrarCartucho" prefHeight="54.0" prefWidth="98.0" text="Cadastrar" />
+      <Button fx:id="botaoPesquisar" layoutX="174.0" layoutY="68.0" mnemonicParsing="false" onAction="#pesquisarCartucho" prefHeight="54.0" prefWidth="98.0" text="Pesquisar" />
+      <Button fx:id="botaoCancelar" layoutX="210.0" layoutY="159.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="98.0" layoutY="30.0" text="MENU CARTUCHO" />
    </children>
 </Pane>

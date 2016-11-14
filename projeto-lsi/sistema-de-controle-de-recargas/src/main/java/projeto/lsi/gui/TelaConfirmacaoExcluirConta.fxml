@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="143.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaConfirmacaoExcluirContaController">
+   <children>
+      <Button fx:id="botaoCancelar" layoutX="36.0" layoutY="94.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoConfirmar" layoutX="146.0" layoutY="94.0" mnemonicParsing="false" onAction="#excluirUsuario" text="Ok" />
+      <Label layoutX="54.0" layoutY="38.0" text="Deseja excluir sua conta?" />
+   </children>
+</AnchorPane>

@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaMenuRecargaController">
    <children>
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="130.0" layoutY="123.0" opacity="0.44" rotate="180.0">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="2.0" layoutY="2.0" opacity="0.38">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="116.0" layoutY="23.0" text="Menu Recarga" />
-      <Button fx:id="botaoCancelar" layoutX="220.0" layoutY="144.0" mnemonicParsing="false" text="Cancelar" />
-      <Button fx:id="botaoToner" layoutX="184.0" layoutY="60.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Toner" />
-      <Button fx:id="botaoCartucho" layoutX="35.0" layoutY="60.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" text="Cartucho" />
+      <Button fx:id="botaoCancelar" layoutX="220.0" layoutY="144.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoToner" layoutX="184.0" layoutY="60.0" mnemonicParsing="false" onAction="#toner" prefHeight="54.0" prefWidth="98.0" text="Toner" />
+      <Button fx:id="botaoCartucho" layoutX="35.0" layoutY="60.0" mnemonicParsing="false" onAction="#cartucho" prefHeight="54.0" prefWidth="98.0" text="Cartucho" />
    </children>
 </Pane>

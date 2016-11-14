@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaRecargaTonerController">
    <children>
+      <ImageView fitHeight="351.0" fitWidth="305.0" layoutY="1.0" opacity="0.18">
+         <image>
+            <Image url="@../imagens/CARTUCHO.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="98.0" layoutY="24.0" text="Recarga Toner" />
       <TextField fx:id="campoPesoInicial" layoutX="110.0" layoutY="189.0" promptText="peso antes da recarga" />
       <TextField fx:id="campoPreco" layoutX="110.0" layoutY="144.0" promptText="preço da recarga" />
@@ -17,8 +22,8 @@
       <Label layoutX="44.0" layoutY="148.0" text="preço" />
       <Label layoutX="44.0" layoutY="106.0" text="Data" />
       <Label layoutX="44.0" layoutY="64.0" text="Modelo" />
-      <Button fx:id="botaoRecarregar" layoutX="185.0" layoutY="285.0" mnemonicParsing="false" text="Recarregar" />
-      <Button fx:id="botaoCancelar" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoRecarregar" layoutX="185.0" layoutY="285.0" mnemonicParsing="false" onAction="#recarga" text="Recarregar" />
+      <Button fx:id="botaoCancelar" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Label layoutX="45.0" layoutY="237.0" text="peso final" />
       <TextField fx:id="campoPesoFinal" layoutX="111.0" layoutY="233.0" promptText="peso após a recarga" />
    </children>

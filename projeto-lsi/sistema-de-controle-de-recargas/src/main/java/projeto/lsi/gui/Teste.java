@@ -1,32 +1,46 @@
 package projeto.lsi.gui;
 
+
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import projeto.lsi.controller.TelaLoginController;
 ;
 
 public class Teste extends Application{
+	
+	public static Scene SCENE;
 
+
+	
 	@Override
 	public void start(Stage stage) throws Exception {
-		
-		Parent noRaiz = FXMLLoader.load(getClass().getResource("MenuPrincipal.fxml"));
-		Scene cena = new Scene(noRaiz);
-		stage.setScene(cena);
-		stage.setTitle("Login");
-		stage.setResizable(false);
-		stage.show();
+		Parent parent;
+		parent = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
+		SCENE.setRoot(parent); //= new Scene(parent);
+		TelaLoginController.STAGE_LOGIN.setScene(SCENE);
+		TelaLoginController.STAGE_LOGIN.setTitle("");
+		TelaLoginController.STAGE_LOGIN.setResizable(false);
+		TelaLoginController.STAGE_LOGIN.show();		
+	}
+	
+	
+	
+	
+	
+
+
+
+
+public static void main(String[] args) {
+	launch(args);
+
+}	
+
 		
 	}
 
-	
-	
-	
-	public static void main(String[] args) {
-		launch(args);
-	
-}	
-
-}

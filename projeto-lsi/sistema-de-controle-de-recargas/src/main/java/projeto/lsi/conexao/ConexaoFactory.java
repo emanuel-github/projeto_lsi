@@ -2,7 +2,7 @@ package projeto.lsi.conexao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
+
 import java.util.ResourceBundle;
 
 import projeto.lsi.Exception.PersistenciaException;
@@ -32,7 +32,7 @@ public class ConexaoFactory {
 					config.getString("projeto.lsi.usuario.bd"), config.getString("projeto.lsi.senha.bd"));
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new PersistenciaException("Erro de Persistencia");
+			throw new PersistenciaException();
 		}
 	}
 

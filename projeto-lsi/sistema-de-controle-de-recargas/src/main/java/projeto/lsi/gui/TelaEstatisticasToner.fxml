@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasTonerController">
    <children>
-      <Label layoutX="66.0" layoutY="88.0" text="Data inicial" />
-      <Label layoutX="66.0" layoutY="140.0" text="Data final" />
-      <Button fx:id="botaoCancelar" layoutX="60.0" layoutY="197.0" mnemonicParsing="false" text="Cancelar" />
-      <Button fx:id="botaoConsultar" layoutX="242.0" layoutY="197.0" mnemonicParsing="false" text="Consultar" />
-      <Label layoutX="97.0" layoutY="28.0" text="Estatísticas de Recargas de Toner" />
-      <DatePicker fx:id="dataInicial" layoutX="135.0" layoutY="84.0" />
-      <DatePicker fx:id="dataFinal" layoutX="135.0" layoutY="136.0" />
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="2.0" layoutY="6.0" opacity="0.32">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="209.0" layoutY="210.0" opacity="0.46" rotate="180.0">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="dataInicial" layoutX="139.0" layoutY="90.0" />
+      <DatePicker fx:id="dataFinal" layoutX="139.0" layoutY="171.0" />
+      <Label layoutX="127.0" layoutY="27.0" text="Estatísticas de recarga de toner" />
+      <Label layoutX="52.0" layoutY="94.0" text="Data inicial" />
+      <Label layoutX="52.0" layoutY="175.0" text="Data final" />
+      <Button fx:id="botaoCancelar" layoutX="253.0" layoutY="228.0" mnemonicParsing="false" text="Consultar" />
+      <Button fx:id="botaoCancelar" layoutX="106.0" layoutY="228.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
    </children>
 </Pane>

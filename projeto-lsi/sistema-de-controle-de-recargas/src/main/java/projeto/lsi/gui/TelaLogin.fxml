@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="236.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaLoginController">
+   <children>
+      <ImageView fx:id="imagemMenuPrincipal" fitHeight="223.0" fitWidth="259.0" layoutX="10.0" layoutY="10.0" opacity="0.37" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../imagens/ImagemMenuPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="35.0" layoutY="22.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="campoLogin" layoutX="26.0" layoutY="70.0" />
+            <PasswordField fx:id="campoSenha" layoutX="26.0" layoutY="115.0" />
+            <Button fx:id="botaoEntrar" layoutX="123.0" layoutY="148.0" mnemonicParsing="false" onAction="#entrarMenu" text="Entrar" />
+            <Button fx:id="botaoCadastrar" layoutX="26.0" layoutY="148.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="Cadastrar" />
+            <Label layoutX="78.0" layoutY="27.0" text="Login" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

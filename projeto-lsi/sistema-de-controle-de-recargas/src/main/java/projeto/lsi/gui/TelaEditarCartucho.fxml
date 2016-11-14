@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarCartuchoConntroller">
+<AnchorPane prefHeight="302.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarCartuchoController">
    <children>
-      <Button fx:id="botaoCadastrar" layoutX="232.0" layoutY="242.0" mnemonicParsing="false" text="Cadastrar" />
-      <Button fx:id="botaoCancelar" layoutX="107.0" layoutY="242.0" mnemonicParsing="false" text="Cancelar" />
-      <Label layoutX="35.0" layoutY="167.0" text="Preço da Recarga" />
-      <Label layoutX="86.0" layoutY="103.0" text="Modelo" />
-      <Label layoutX="108.0" layoutY="39.0" text="Editar Cartuchos" />
-      <TextField fx:id="campoPreco" layoutX="150.0" layoutY="163.0" />
-      <TextField fx:id="campoModelo" layoutX="150.0" layoutY="99.0" />
+      <ImageView fitHeight="294.0" fitWidth="365.0" opacity="0.17">
+         <image>
+            <Image url="@../imagens/CARTUCHO.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="campoModelo" layoutX="166.0" layoutY="106.0" />
+      <TextField fx:id="campoPreco" layoutX="166.0" layoutY="170.0" />
+      <Label layoutX="124.0" layoutY="46.0" text="Editar Cartuchos" />
+      <Label layoutX="102.0" layoutY="110.0" text="Modelo" />
+      <Label layoutX="51.0" layoutY="174.0" text="Preço da Recarga" />
+      <Button fx:id="botaoCancelar" layoutX="123.0" layoutY="249.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoEditar" layoutX="248.0" layoutY="249.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
    </children>
-</Pane>
+</AnchorPane>

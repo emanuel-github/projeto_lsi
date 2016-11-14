@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -7,6 +8,11 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarClienteController">
    <children>
+      <ImageView fitHeight="319.0" fitWidth="280.0" layoutX="4.0" layoutY="-2.0" opacity="0.19">
+         <image>
+            <Image url="@../imagens/CARTUCHO.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="115.0" layoutY="21.0" text="Editar Cliente" />
       <TextField fx:id="campoNome" layoutX="96.0" layoutY="71.0" prefHeight="25.0" prefWidth="149.0" promptText="Digite seu nome" />
       <TextField fx:id="campoCpf" layoutX="96.0" layoutY="119.0" promptText="Digite seu cpf" />
@@ -16,7 +22,7 @@
       <Label layoutX="46.0" layoutY="123.0" text="CPF" />
       <Label layoutX="42.0" layoutY="175.0" text="Email" />
       <Label layoutX="43.0" layoutY="223.0" text="Telefone" />
-      <Button fx:id="botaoCancelar" layoutX="44.0" layoutY="269.0" mnemonicParsing="false" text="Cancelar" />
-      <Button fx:id="botaoEditar" layoutX="193.0" layoutY="269.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="botaoCancelar" layoutX="44.0" layoutY="269.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoEditar" layoutX="193.0" layoutY="269.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
    </children>
 </Pane>

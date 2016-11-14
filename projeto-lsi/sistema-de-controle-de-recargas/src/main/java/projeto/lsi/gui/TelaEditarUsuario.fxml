@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane fx:id="campoEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarUsuarioController">
+<AnchorPane prefHeight="353.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEditarUsuarioController">
    <children>
-      <Button fx:id="botaoEditar" layoutX="180.0" layoutY="252.0" mnemonicParsing="false" text="Editar" />
-      <Button fx:id="botaoCancelar" layoutX="71.0" layoutY="252.0" mnemonicParsing="false" text="Cancelar" />
-      <Label layoutX="41.0" layoutY="44.0" text="Nome" />
-      <Label layoutX="41.0" layoutY="100.0" text="Email" />
-      <Label layoutX="42.0" layoutY="149.0" text="Login" />
-      <Label layoutX="40.0" layoutY="208.0" text="Senha" />
-      <TextField fx:id="campoNome" layoutX="90.0" layoutY="40.0" promptText="Digite seu nome " />
-      <TextField fx:id="campoEmail" layoutX="90.0" layoutY="96.0" promptText="Digite email" />
-      <TextField fx:id="campoLogin" layoutX="90.0" layoutY="145.0" promptText="Digite Login" />
-      <PasswordField fx:id="campoSenha" layoutX="90.0" layoutY="204.0" promptText="Digite Senha" />
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="132.0" layoutY="283.0" opacity="0.44" rotate="178.8">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="200.0" opacity="0.31">
+         <image>
+            <Image url="@../imagens/CARTUCHOS.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="81.0" text="Nome" />
+      <Label layoutX="68.0" layoutY="132.0" text="Email" />
+      <Label layoutX="68.0" layoutY="177.0" text="Login" />
+      <Label layoutX="68.0" layoutY="236.0" text="Senha" />
+      <TextField fx:id="campoNome" layoutX="128.0" layoutY="69.0" />
+      <TextField fx:id="campoEmail" layoutX="128.0" layoutY="128.0" />
+      <TextField fx:id="campoLogin" layoutX="128.0" layoutY="173.0" />
+      <PasswordField fx:id="campoSenha" layoutX="128.0" layoutY="224.0" />
+      <Button fx:id="botaoEditar" layoutX="232.0" layoutY="281.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button fx:id="botaoExcluirConta" layoutX="132.0" layoutY="281.0" mnemonicParsing="false" onAction="#excluirUsuario" text="Excluir Conta" />
+      <Button fx:id="botaoCancelar" layoutX="42.0" layoutY="281.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="80.0" layoutY="26.0" text="CONFIGURAÇÕES DO USUÁRIO" />
    </children>
-</Pane>
+</AnchorPane>

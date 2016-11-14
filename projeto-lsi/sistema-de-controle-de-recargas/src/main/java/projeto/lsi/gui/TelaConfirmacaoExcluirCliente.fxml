@@ -13,7 +13,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="botaoConfirmar" layoutX="155.0" layoutY="74.0" mnemonicParsing="false" text="Ok" />
-      <Button fx:id="botaoCancelar" layoutX="54.0" layoutY="74.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="botaoConfirmar" layoutX="155.0" layoutY="74.0" mnemonicParsing="false" onAction="#confirmacaoExclusao" text="Ok" />
+      <Button fx:id="botaoCancelar" layoutX="54.0" layoutY="74.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
    </children>
 </Pane>

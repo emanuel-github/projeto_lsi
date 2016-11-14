@@ -3,10 +3,12 @@ package projeto.lsi.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.stage.Stage;
 
 public class TelaEstatisticasCartuchoController implements Initializable {
 
@@ -22,8 +24,16 @@ public class TelaEstatisticasCartuchoController implements Initializable {
 
     @FXML
     private DatePicker dataFinal;
+    
+    
+    public static Stage STAGE_ESTATISTICAS_CARTUCHO = new Stage();
 
 	
+    @FXML
+    public void cancelar(ActionEvent event){
+    	STAGE_ESTATISTICAS_CARTUCHO.close();
+    	
+    }
 	
 	
 	@Override
@@ -31,5 +41,7 @@ public class TelaEstatisticasCartuchoController implements Initializable {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
 
 }

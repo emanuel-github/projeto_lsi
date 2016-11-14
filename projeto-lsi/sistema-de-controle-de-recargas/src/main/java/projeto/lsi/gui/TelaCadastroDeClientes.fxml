@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -7,8 +8,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaCadastroDeClientesController">
    <children>
-      <Button fx:id="botaoCancelar" layoutX="31.0" layoutY="228.0" mnemonicParsing="false" text="Cancelar" />
-      <Button fx:id="botaoCadastrar" layoutX="182.0" layoutY="228.0" mnemonicParsing="false" text="Cadastrar" />
+      <ImageView fitHeight="271.0" fitWidth="284.0" opacity="0.26">
+         <image>
+            <Image url="@../imagens/CARTUCHO.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoCancelar" layoutX="31.0" layoutY="228.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoCadastrar" layoutX="182.0" layoutY="228.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
       <Label layoutX="34.0" layoutY="54.0" text="Nome *" />
       <Label layoutX="34.0" layoutY="96.0" text="CPF" />
       <Label layoutX="34.0" layoutY="138.0" text="Email" />
