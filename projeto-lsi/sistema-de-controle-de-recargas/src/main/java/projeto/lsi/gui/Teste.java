@@ -21,7 +21,7 @@ public class Teste extends Application{
 	public void start(Stage stage) throws Exception {
 		Parent parent;
 		parent = FXMLLoader.load(getClass().getResource("TelaLogin.fxml"));
-		SCENE.setRoot(parent); //= new Scene(parent);
+		SCENE = new Scene(parent);
 		TelaLoginController.STAGE_LOGIN.setScene(SCENE);
 		TelaLoginController.STAGE_LOGIN.setTitle("");
 		TelaLoginController.STAGE_LOGIN.setResizable(false);
