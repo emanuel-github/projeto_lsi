@@ -7,6 +7,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&#x09;private int insereLogin(Login login) throws PersistenciaException, SQLException, LoginExistenteException{"/>
 			<item value="public void cadastrar(Usuario obj) throws PersistenciaException {"/>
 		</list>
 		<list key="replacehistory">

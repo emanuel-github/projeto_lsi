@@ -23,7 +23,6 @@ import javafx.stage.Stage;
 import projeto.lsi.DAO.UsuarioDAO;
 import projeto.lsi.Exception.LoginOuSenhaIvalidoException;
 import projeto.lsi.Exception.PersistenciaException;
-import projeto.lsi.gui.Teste;
 import projeto.lsi.pojo.Usuario;
 
 public class TelaLoginController implements Initializable{
@@ -32,10 +31,10 @@ public class TelaLoginController implements Initializable{
 	    private TextField campoLogin;
 
 	    @FXML
-	    private Button botaoEntrar = new Button();
+	    private Button botaoEntrar;
 
 	    @FXML
-	    private Button botaoCadastrar = new Button();
+	    private Button botaoCadastrar;
 
 	    @FXML
 	    private PasswordField campoSenha;
@@ -44,6 +43,8 @@ public class TelaLoginController implements Initializable{
 	    private ImageView imagemMenuPrincipal;
 	    
 	    public static Stage STAGE_LOGIN = new Stage();
+	    
+	    public Stage stage = new Stage();
 	    
 	    Connection connection;
 	    
@@ -54,11 +55,11 @@ public class TelaLoginController implements Initializable{
 	    	//UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
 	    	try {
 				//usuarioDAO.logar(campoLogin.getText(), campoSenha.getText());
-				STAGE_LOGIN.close();
+				//STAGE_LOGIN.close();
 				Parent parent;				
 				parent = FXMLLoader.load(getClass().getResource("../gui/MenuPrincipal.fxml"));
-				Teste.SCENE.setRoot(parent);
-				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setScene(Teste.SCENE);
+				Scene cena = new Scene(parent);
+				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setScene(cena);
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setTitle("");
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setResizable(false);
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.show();		
