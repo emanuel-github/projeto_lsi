@@ -51,7 +51,7 @@ public class TelaPesquisaClienteController implements Initializable{
 	public void pesquisarCliente(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEditarCliente.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEditarCliente.fxml"));
 			Scene cena = new Scene(parent);
 			TelaEditarClienteController.STAGE_EDITAR_CLIENTE.setScene(cena);
 			TelaEditarClienteController.STAGE_EDITAR_CLIENTE.setTitle("");
@@ -67,7 +67,7 @@ public class TelaPesquisaClienteController implements Initializable{
 	public void excluirCliente(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaConfirmacaoExcluirCliente.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaConfirmacaoExcluirCliente.fxml"));
 			Scene cena = new Scene(parent);
 			TelaConfirmacaoExcluirClienteController.STAGE_EXCLUIR_CLIENTE.setScene(cena);
 			TelaConfirmacaoExcluirClienteController.STAGE_EXCLUIR_CLIENTE.setTitle("");

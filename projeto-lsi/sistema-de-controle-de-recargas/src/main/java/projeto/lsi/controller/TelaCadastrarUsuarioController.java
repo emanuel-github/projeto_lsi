@@ -1,12 +1,16 @@
 package projeto.lsi.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -46,6 +50,18 @@ public class TelaCadastrarUsuarioController implements Initializable{
     @FXML
 	public void cancelar(ActionEvent event) {
 		STAGE_CADASTRAR_USUARIO.close();
+		Parent parent;
+		try {
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLogin.fxml"));
+			Scene cena = new Scene(parent);
+			TelaLoginController.STAGE_LOGIN.setScene(cena);
+			TelaLoginController.STAGE_LOGIN.setTitle("");
+			TelaLoginController.STAGE_LOGIN.setResizable(false);
+			TelaLoginController.STAGE_LOGIN.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
     
@@ -73,6 +89,19 @@ public class TelaCadastrarUsuarioController implements Initializable{
 	        dialogoInfo.setTitle("Mensagem");
 	        dialogoInfo.setHeaderText("USUARIO CADASTRADO");
 	        dialogoInfo.showAndWait();
+			try {
+				STAGE_CADASTRAR_USUARIO.close();
+				Parent parent;
+				parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLogin.fxml"));
+				Scene cena = new Scene(parent);
+				TelaLoginController.STAGE_LOGIN.setScene(cena);
+				TelaLoginController.STAGE_LOGIN.setTitle("");
+				TelaLoginController.STAGE_LOGIN.setResizable(false);
+				TelaLoginController.STAGE_LOGIN.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
     	
 	        
 	//	}

@@ -62,7 +62,7 @@ public class TelaLoginParaAtualizacaoController implements Initializable{
 		try {
 			//usuarioDAO.logarParaAtualizar(campoLogin.getText(), campoSenha.getText());
 			Parent parent;
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEditarUsuario.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEditarUsuario.fxml"));
 			Scene cena = new Scene(parent);
 			STAGE_TELA_LOGIN_ATUALIZACAO.setScene(cena);
 			STAGE_TELA_LOGIN_ATUALIZACAO.setTitle("");

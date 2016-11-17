@@ -55,9 +55,9 @@ public class TelaLoginController implements Initializable{
 	    	//UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
 	    	try {
 				//usuarioDAO.logar(campoLogin.getText(), campoSenha.getText());
-				//STAGE_LOGIN.close();
+				STAGE_LOGIN.close();
 				Parent parent;				
-				parent = FXMLLoader.load(getClass().getResource("../gui/MenuPrincipal.fxml"));
+				parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/MenuPrincipal.fxml"));
 				Scene cena = new Scene(parent);
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setScene(cena);
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setTitle("");
@@ -86,7 +86,7 @@ public class TelaLoginController implements Initializable{
 	    	STAGE_LOGIN.close();
 	    	Parent parent;
 			try {			
-				parent = FXMLLoader.load(getClass().getResource("../gui/TelaCadastrarUsuario.fxml"));
+				parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastrarUsuario.fxml"));
 				Scene cena = new Scene(parent);
 				TelaCadastrarUsuarioController.STAGE_CADASTRAR_USUARIO.setScene(cena);
 				TelaCadastrarUsuarioController.STAGE_CADASTRAR_USUARIO.setTitle("");

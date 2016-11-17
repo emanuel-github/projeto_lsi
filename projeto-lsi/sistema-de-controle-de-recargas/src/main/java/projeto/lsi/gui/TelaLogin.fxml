@@ -10,18 +10,18 @@
 
 <AnchorPane prefHeight="236.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaLoginController">
    <children>
-      <ImageView fx:id="imagemMenuPrincipal" fitHeight="223.0" fitWidth="259.0" layoutX="10.0" layoutY="10.0" opacity="0.37" pickOnBounds="true" smooth="false">
+      <ImageView fx:id="imagemMenuPrincipal" fitHeight="237.0" fitWidth="269.0" opacity="0.37" pickOnBounds="true" smooth="false">
          <image>
             <Image url="@../imagens/ImagemMenuPrincipal.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="35.0" layoutY="22.0" prefHeight="200.0" prefWidth="200.0">
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="237.0" prefWidth="269.0">
          <children>
-            <TextField fx:id="campoLogin" layoutX="26.0" layoutY="70.0" />
-            <PasswordField fx:id="campoSenha" layoutX="26.0" layoutY="115.0" />
-            <Button fx:id="botaoEntrar" layoutX="123.0" layoutY="148.0" mnemonicParsing="false" onAction="#entrarMenu" text="Entrar" />
-            <Button fx:id="botaoCadastrar" layoutX="26.0" layoutY="148.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="Cadastrar" />
-            <Label layoutX="78.0" layoutY="27.0" text="Login" />
+            <TextField fx:id="campoLogin" layoutX="60.0" layoutY="70.0" />
+            <PasswordField fx:id="campoSenha" layoutX="60.0" layoutY="118.0" />
+            <Button fx:id="botaoEntrar" layoutX="161.0" layoutY="163.0" mnemonicParsing="false" onAction="#entrarMenu" text="Entrar" />
+            <Button fx:id="botaoCadastrar" layoutX="60.0" layoutY="163.0" mnemonicParsing="false" onAction="#cadastrarUsuario" text="Cadastrar" />
+            <Label layoutX="112.0" layoutY="27.0" text="Login" />
          </children>
       </Pane>
    </children>

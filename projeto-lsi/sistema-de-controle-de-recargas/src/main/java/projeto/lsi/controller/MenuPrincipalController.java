@@ -92,7 +92,7 @@ public class MenuPrincipalController implements Initializable{
 	void chamaTelaDeConfiguracaoUsuario(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaLoginParaAtualizacao.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLoginParaAtualizacao.fxml"));
 			Scene cena = new Scene(parent);
 			TelaLoginParaAtualizacaoController.STAGE_TELA_LOGIN_ATUALIZACAO.setScene(cena);
 			TelaLoginParaAtualizacaoController.STAGE_TELA_LOGIN_ATUALIZACAO.setTitle("");
@@ -120,7 +120,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaCadastrarCliente(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaCadastroDeClientes.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastroDeClientes.fxml"));
 			Scene cena = new Scene(parent);
 			TelaCadastroDeClientesController.STAGE_CADASTRO_CLIENTE.setScene(cena);
 			TelaCadastroDeClientesController.STAGE_CADASTRO_CLIENTE.setTitle("");
@@ -136,7 +136,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaPesquisarCliente(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaPesquisarCliente.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaPesquisarCliente.fxml"));
 			Scene cena = new Scene(parent);
 			TelaPesquisaClienteController.STAGE_PESQUISA_CLIENTE.setScene(cena);
 			TelaPesquisaClienteController.STAGE_PESQUISA_CLIENTE.setTitle("");
@@ -152,7 +152,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaMenuCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaMenuCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaMenuCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaMenuCartuchoController.STAGE_MENU_CARTUCHO.setScene(cena);
 			TelaMenuCartuchoController.STAGE_MENU_CARTUCHO.setTitle("");
@@ -168,7 +168,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaMenuToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaMenuToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaMenuToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaMenuTonerController.STAGE_MENU_TONER.setScene(cena);
 			TelaMenuTonerController.STAGE_MENU_TONER.setTitle("");
@@ -185,7 +185,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaMenuRecarga(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaMenuRecarga.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaMenuRecarga.fxml"));
 			Scene cena = new Scene(parent);
 			TelaMenuRecargaController.STAGE_MENU_RECARGA.setScene(cena);
 			TelaMenuRecargaController.STAGE_MENU_RECARGA.setTitle("");
@@ -202,7 +202,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaEstatisticasCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEstatisticasCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEstatisticasCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaEstatisticasCartuchoController.STAGE_ESTATISTICAS_CARTUCHO.setScene(cena);
 			TelaEstatisticasCartuchoController.STAGE_ESTATISTICAS_CARTUCHO.setTitle("");
@@ -220,7 +220,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaEstatisticasToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEstatisticasToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEstatisticasToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaEstatisticasTonerController.STAGE_ESTATISTICAS_TONER.setScene(cena);
 			TelaEstatisticasTonerController.STAGE_ESTATISTICAS_TONER.setTitle("");
@@ -238,7 +238,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaLucroEmRecargas(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaLucroEmRecargas.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLucroEmRecargas.fxml"));
 			Scene cena = new Scene(parent);
 			TelaLucroEmRecargasController.STAGE_LUCRO_RECARGAS.setScene(cena);
 			TelaLucroEmRecargasController.STAGE_LUCRO_RECARGAS.setTitle("");
@@ -255,7 +255,7 @@ public class MenuPrincipalController implements Initializable{
 	public void chamaTelaListaDeClientes(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaListaDeClientes.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaListaDeClientes.fxml"));
 			Scene cena = new Scene(parent);
 			stage.setScene(cena);
 			stage.setTitle("");

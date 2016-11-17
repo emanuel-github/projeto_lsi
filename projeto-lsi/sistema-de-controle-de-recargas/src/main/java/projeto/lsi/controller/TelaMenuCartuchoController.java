@@ -33,7 +33,7 @@ public class TelaMenuCartuchoController implements Initializable{
 	public void cadastrarCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaCadastrarCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastrarCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.setScene(cena);
 			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.setTitle("");
@@ -50,7 +50,7 @@ public class TelaMenuCartuchoController implements Initializable{
 	public void pesquisarCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaPesquisarCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaPesquisarCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.setScene(cena);
 			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.setTitle("");

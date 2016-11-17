@@ -58,7 +58,7 @@ public class TelaEditarUsuarioController implements Initializable{
 	public void excluirUsuario(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaConfirmacaoExcluirConta.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaConfirmacaoExcluirConta.fxml"));
 			Scene cena = new Scene(parent);
 			TelaConfirmacaoExcluirContaController.STAGE_EXCLUIR_USUARIO.setScene(cena);
 			TelaConfirmacaoExcluirContaController.STAGE_EXCLUIR_USUARIO.setTitle("");

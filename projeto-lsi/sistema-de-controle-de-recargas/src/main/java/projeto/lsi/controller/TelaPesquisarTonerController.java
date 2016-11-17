@@ -44,7 +44,7 @@ public class TelaPesquisarTonerController implements Initializable{
 	public void editarToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEditarToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEditarToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaEditarTonerController.STAGE_EDITAR_TONER.setScene(cena);
 			TelaEditarTonerController.STAGE_EDITAR_TONER.setTitle("");
@@ -62,7 +62,7 @@ public class TelaPesquisarTonerController implements Initializable{
 	public void excluirToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaConfirmacaoExcluirToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaConfirmacaoExcluirToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaConfirmacaoExcluirTonerController.STAGE_CONFIRMACAO_EXCLUIR_TONER.setScene(cena);
 			TelaConfirmacaoExcluirTonerController.STAGE_CONFIRMACAO_EXCLUIR_TONER.setTitle("");

@@ -34,7 +34,7 @@ public class TelaMenuRecargaController implements Initializable{
 	public void cartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaRecargaCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaRecargaCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.setScene(cena);
 			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.setTitle("");
@@ -52,7 +52,7 @@ public class TelaMenuRecargaController implements Initializable{
 	public void toner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaRecargaToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaRecargaToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaRecargaTonerController.STAGE_RECARGA_TONER.setScene(cena);
 			TelaRecargaTonerController.STAGE_RECARGA_TONER.setTitle("");

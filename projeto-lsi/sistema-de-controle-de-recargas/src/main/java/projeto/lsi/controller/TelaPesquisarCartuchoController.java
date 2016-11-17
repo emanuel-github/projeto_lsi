@@ -45,7 +45,7 @@ public class TelaPesquisarCartuchoController implements Initializable {
 	public void editarCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaEditarCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEditarCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaEditarCartuchoController.STAGE_EDITAR_CARTUCHO.setScene(cena);
 			TelaEditarCartuchoController.STAGE_EDITAR_CARTUCHO.setTitle("");
@@ -62,7 +62,7 @@ public class TelaPesquisarCartuchoController implements Initializable {
     public void excluirCartucho(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaConfirmacaoExcluirCartucho.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaConfirmacaoExcluirCartucho.fxml"));
 			Scene cena = new Scene(parent);
 			TelaConfirmacaoExcluirCartuchoController.STAGE_CONFIRMACAO_EXCLUIR_CARTUCHO.setScene(cena);
 			TelaConfirmacaoExcluirCartuchoController.STAGE_CONFIRMACAO_EXCLUIR_CARTUCHO.setTitle("");

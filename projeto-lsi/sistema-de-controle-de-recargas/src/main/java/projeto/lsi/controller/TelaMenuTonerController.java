@@ -31,7 +31,7 @@ public class TelaMenuTonerController implements Initializable {
 	public void cadastrarToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaCadastrarToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastrarToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.setScene(cena);
 			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.setTitle("");
@@ -50,7 +50,7 @@ public class TelaMenuTonerController implements Initializable {
 	public void pesquisarToner(ActionEvent event) {
 		Parent parent;
 		try {			
-			parent = FXMLLoader.load(getClass().getResource("../gui/TelaPesquisarToner.fxml"));
+			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaPesquisarToner.fxml"));
 			Scene cena = new Scene(parent);
 			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.setScene(cena);
 			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.setTitle("");
