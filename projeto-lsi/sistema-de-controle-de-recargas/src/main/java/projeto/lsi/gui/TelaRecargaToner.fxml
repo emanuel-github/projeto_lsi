@@ -14,17 +14,15 @@
          </image>
       </ImageView>
       <Label layoutX="98.0" layoutY="24.0" text="Recarga Toner" />
-      <TextField fx:id="campoPesoInicial" layoutX="110.0" layoutY="189.0" promptText="peso antes da recarga" />
-      <TextField fx:id="campoPreco" layoutX="110.0" layoutY="144.0" promptText="preço da recarga" />
-      <TextField fx:id="campoData" layoutX="110.0" layoutY="102.0" promptText="data da recarga" />
+      <TextField fx:id="campoPesoInicial" layoutX="110.0" layoutY="150.0" promptText="peso antes da recarga" />
+      <TextField fx:id="campoPreco" layoutX="110.0" layoutY="105.0" promptText="preço da recarga" />
       <TextField fx:id="campoModelo" layoutX="110.0" layoutY="60.0" promptText="Digite modelo toner" />
-      <Label layoutX="44.0" layoutY="193.0" text="peso inicial" />
-      <Label layoutX="44.0" layoutY="148.0" text="preço" />
-      <Label layoutX="44.0" layoutY="106.0" text="Data" />
+      <Label layoutX="44.0" layoutY="154.0" text="peso inicial" />
+      <Label layoutX="44.0" layoutY="109.0" text="preço" />
       <Label layoutX="44.0" layoutY="64.0" text="Modelo" />
       <Button fx:id="botaoRecarregar" layoutX="185.0" layoutY="285.0" mnemonicParsing="false" onAction="#recarga" text="Recarregar" />
       <Button fx:id="botaoCancelar" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Label layoutX="45.0" layoutY="237.0" text="peso final" />
-      <TextField fx:id="campoPesoFinal" layoutX="111.0" layoutY="233.0" promptText="peso após a recarga" />
+      <Label layoutX="45.0" layoutY="198.0" text="peso final" />
+      <TextField fx:id="campoPesoFinal" layoutX="111.0" layoutY="194.0" promptText="peso após a recarga" />
    </children>
 </Pane>

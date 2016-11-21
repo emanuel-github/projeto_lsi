@@ -8,6 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import projeto.lsi.DAO.UsuarioDAO;
+import projeto.lsi.Exception.PersistenciaException;
 import projeto.lsi.pojo.Usuario;
 
 public class TelaConfirmacaoExcluirContaController {
@@ -34,10 +35,20 @@ public class TelaConfirmacaoExcluirContaController {
 	    
 	    @FXML
 	    public void excluirUsuario(ActionEvent event) {
-	    	Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-	    	dialogoInfo.setTitle("Mensagem");
-	    	dialogoInfo.setHeaderText("USUÁRIO EXCLUÍDO");
-	    	dialogoInfo.showAndWait();
+	    	UsuarioDAO usu = new UsuarioDAO(connection);
+	    	try {
+				usu.deletar(Usuario.getUsuario().getIdUsuario());
+				Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+				dialogoInfo.setTitle("Mensagem");
+				dialogoInfo.setHeaderText("USUÁRIO EXCLUÍDO");
+				dialogoInfo.showAndWait();
+				System.exit(0);
+				
+			} catch (PersistenciaException e) {
+				Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+				dialogoInfo.setHeaderText(e.getMessage());
+				dialogoInfo.showAndWait();
+			}
 
 	    }
 	    

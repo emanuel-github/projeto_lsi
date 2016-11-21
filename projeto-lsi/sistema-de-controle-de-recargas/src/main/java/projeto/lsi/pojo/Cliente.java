@@ -7,11 +7,21 @@ public class Cliente {
 	private String cpf;
 	private String email;
 	private String telefone;
-	private Cartucho cartucho;
-	private Toner toner;
+	public static Cliente cliente;
 	
 	
-	
+	public Integer getIdCliente() {
+		return idCliente;
+	}
+	public void setIdCliente(Integer idCliente) {
+		this.idCliente = idCliente;
+	}
+	public static Cliente getCliente() {
+		return cliente;
+	}
+	public static void setCliente(Cliente cliente) {
+		Cliente.cliente = cliente;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -36,6 +46,15 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "ID: " + this.getIdCliente() + " | NOME: " + this.getNome() + " | EMAIL: " + this.getEmail() + " | TELEFONE: " + this.getTelefone();
+	}
+	
+	
+	
 	
 	
 	

@@ -5,10 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="284.0" prefWidth="379.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="projeto.lsi.controller.TelaListaDeClientesController">
+<AnchorPane prefHeight="284.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaListaDeClientesController">
    <children>
-      <ListView fx:id="listaClientes" layoutX="9.0" layoutY="60.0" prefHeight="213.0" prefWidth="362.0" />
-      <Label layoutX="139.0" layoutY="20.0" text="LISTA DE CLIENTES" />
+      <ListView fx:id="listaClientes" layoutX="9.0" layoutY="60.0" prefHeight="213.0" prefWidth="569.0" />
+      <Label layoutX="243.0" layoutY="24.0" text="LISTA DE CLIENTES" />
    </children>
 </AnchorPane>

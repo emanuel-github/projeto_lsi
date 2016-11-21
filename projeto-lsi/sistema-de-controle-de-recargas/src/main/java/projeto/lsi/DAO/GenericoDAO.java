@@ -12,7 +12,7 @@ public interface GenericoDAO<T> {
 	
 	void atualizar (T obj) throws PersistenciaException;
 	
-	void deletar (Integer id);
+	void deletar (Integer id) throws PersistenciaException;
 	
 	void buscarPorId(Integer id) throws PersistenciaException;
 	

@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 
 import java.util.ResourceBundle;
 
+import javax.swing.JOptionPane;
+
 import projeto.lsi.Exception.PersistenciaException;
 
 public class ConexaoFactory {
@@ -39,8 +41,38 @@ public class ConexaoFactory {
 	
 	
 	
+		
+/*
+	private static ConexaoFactory con;
+	
+	private ConexaoFactory() {
+	}
+	
+	public static ConexaoFactory getInstance() {
+		if (con == null) {
+			con = new ConexaoFactory();
+		}
+		return con;
+	}
+	
+	public Connection getConnection() throws PersistenciaException {
+		try {
+			Class.forName("org.postgresql.Driver");
+			return DriverManager.getConnection("jdbc:postgresql://localhost:5432/sistemaderecargas", "postgres", "1234");
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new PersistenciaException();
+		}
+	}
+
+	*/
+	
+	
+}
+	
+	
 	
 	
 	
 
-}
+

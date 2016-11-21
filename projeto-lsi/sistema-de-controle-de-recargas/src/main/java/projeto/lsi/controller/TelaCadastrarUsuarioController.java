@@ -67,47 +67,41 @@ public class TelaCadastrarUsuarioController implements Initializable{
     
     
     @FXML
-	public void cadastrar(ActionEvent event) {
-    //	Usuario usuario = new Usuario();
-    //	usuario.setNome(campoNome.getText());
-    //	usuario.setEmail(campoEmail.getText());
-    //	usuario.setLogin(campoLogin.getText());
-    //	usuario.setSenha(campoSenha.getText());
-    //	UsuarioBO usuarioBO = new UsuarioBO();
-    //	try {
-		//	usuarioBO.verificacaoDosCampos(usuario);
-		//	UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
-		//	usuarioDAO.cadastrar(usuario);
-	//	} catch (CampoNaoPreenchidoException e1) {
-		//	Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-	    //    dialogoInfo.setTitle("Mensagem");
-	    //    dialogoInfo.setHeaderText(e1.getMessage());
-	     //   dialogoInfo.showAndWait();
-		
-	//	} catch (PersistenciaException e) {
-			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-	        dialogoInfo.setTitle("Mensagem");
-	        dialogoInfo.setHeaderText("USUARIO CADASTRADO");
-	        dialogoInfo.showAndWait();
-			try {
-				STAGE_CADASTRAR_USUARIO.close();
-				Parent parent;
-				parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLogin.fxml"));
-				Scene cena = new Scene(parent);
-				TelaLoginController.STAGE_LOGIN.setScene(cena);
-				TelaLoginController.STAGE_LOGIN.setTitle("");
-				TelaLoginController.STAGE_LOGIN.setResizable(false);
-				TelaLoginController.STAGE_LOGIN.show();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-    	
-	        
-	//	}
-		
+    public void cadastrar(ActionEvent event) {
+    	Usuario usuario = new Usuario();
+    	usuario.setNome(campoNome.getText());
+    	usuario.setEmail(campoEmail.getText());
+    	usuario.setLogin(campoLogin.getText());
+    	usuario.setSenha(campoSenha.getText());
+    	UsuarioBO usuarioBO = new UsuarioBO();
+    	try {
+    		usuarioBO.verificacaoDosCampos(usuario);
+    		UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
+    		usuarioDAO.cadastrar(usuario);
+    		Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+    		dialogoInfo.setTitle("Mensagem");
+    		dialogoInfo.setHeaderText("USUARIO CADASTRADO");
+    		dialogoInfo.showAndWait();
+    		STAGE_CADASTRAR_USUARIO.close();
+    		Parent parent;
+    		parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLogin.fxml"));
+    		Scene cena = new Scene(parent);
+    		TelaLoginController.STAGE_LOGIN.setScene(cena);
+    		TelaLoginController.STAGE_LOGIN.setTitle("");
+    		TelaLoginController.STAGE_LOGIN.setResizable(false);
+    		TelaLoginController.STAGE_LOGIN.show();
+    	} catch (CampoNaoPreenchidoException | PersistenciaException |IOException e1) {
+    		Alert dialogo = new Alert(Alert.AlertType.INFORMATION);
+    		dialogo.setTitle("Mensagem");
+    		dialogo.setHeaderText(e1.getMessage());
+    		dialogo.showAndWait();
 
-	}
+    	} 
+
+
+    }
+
+
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {

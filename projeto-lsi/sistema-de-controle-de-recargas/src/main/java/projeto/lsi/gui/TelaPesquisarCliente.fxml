@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaPesquisaClienteController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaPesquisaClienteController">
    <children>
-      <ImageView fitHeight="227.0" fitWidth="413.0" layoutX="-3.0" layoutY="-1.0" opacity="0.27">
+      <ImageView fitHeight="307.0" fitWidth="558.0" layoutX="-3.0" layoutY="-1.0" opacity="0.27">
          <image>
             <Image url="@../imagens/CARTUCHO.jpg" />
          </image>
       </ImageView>
       <Label layoutX="33.0" layoutY="59.0" text="Nome" />
-      <ListView fx:id="listViewResultadosPesquisa" layoutX="32.0" layoutY="108.0" prefHeight="81.0" prefWidth="241.0" />
-      <TextField fx:id="campoPesquisa" layoutX="77.0" layoutY="55.0" promptText="Diigite nome" />
-      <Button fx:id="botaoConsultar" layoutX="304.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Consultar" />
-      <Button fx:id="botaoEditar" layoutX="304.0" layoutY="95.0" mnemonicParsing="false" onAction="#pesquisarCliente" prefHeight="25.0" prefWidth="69.0" text="Editar" />
-      <Button fx:id="botaoExcluir" layoutX="304.0" layoutY="130.0" mnemonicParsing="false" onAction="#excluirCliente" prefHeight="25.0" prefWidth="69.0" text="Excluir" />
-      <Button fx:id="botaoCancelar" layoutX="304.0" layoutY="165.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
-      <Label layoutX="152.0" layoutY="22.0" text="Pesquisa de Cliente" />
+      <ListView fx:id="listViewResultadosPesquisa" layoutX="32.0" layoutY="97.0" prefHeight="166.0" prefWidth="435.0" />
+      <TextField fx:id="campoPesquisa" layoutX="77.0" layoutY="55.0" prefHeight="25.0" prefWidth="339.0" promptText="Digite nome" />
+      <Button fx:id="botaoConsultar" layoutX="479.0" layoutY="97.0" mnemonicParsing="false" onAction="#consultarCliente" prefHeight="25.0" prefWidth="69.0" text="Consultar" />
+      <Button fx:id="botaoEditar" layoutX="479.0" layoutY="141.0" mnemonicParsing="false" onAction="#editarCliente" prefHeight="25.0" prefWidth="69.0" text="Editar" />
+      <Button fx:id="botaoExcluir" layoutX="479.0" layoutY="187.0" mnemonicParsing="false" onAction="#excluirCliente" prefHeight="25.0" prefWidth="69.0" text="Excluir" />
+      <Button fx:id="botaoCancelar" layoutX="479.0" layoutY="235.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
+      <Label layoutX="208.0" layoutY="20.0" text="PESQUISA CLIENTE">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
    </children>
 </Pane>

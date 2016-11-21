@@ -2,6 +2,7 @@ package projeto.lsi.controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -15,6 +16,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import projeto.lsi.DAO.UsuarioDAO;
+import projeto.lsi.Exception.CampoNaoPreenchidoException;
+import projeto.lsi.Exception.PersistenciaException;
+import projeto.lsi.logica.UsuarioBO;
 import projeto.lsi.pojo.Usuario;
 
 public class TelaEditarUsuarioController implements Initializable{
@@ -42,7 +47,8 @@ public class TelaEditarUsuarioController implements Initializable{
     
     
     public static Stage EDITAR_USUARIO = new Stage();
-
+    
+    private Connection connection;
     
     
     
@@ -74,10 +80,36 @@ public class TelaEditarUsuarioController implements Initializable{
     
     @FXML
 	public void editar(ActionEvent event) {
-		Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-        dialogoInfo.setTitle("Mensagem");
-        dialogoInfo.setHeaderText("USUARIO EDITADO");
-        dialogoInfo.showAndWait();
+    	Usuario usuario = new Usuario();
+    	usuario.setIdUsuario(Usuario.getUsuario().getIdUsuario());
+    	usuario.setNome(campoNome.getText());
+    	usuario.setLogin(campoLogin.getText());
+    	usuario.setSenha(campoSenha.getText());
+    	usuario.setEmail(campoEmail.getText());
+    	UsuarioBO usu = new UsuarioBO();
+    	try {
+			usu.verificacaoDosCampos(usuario);
+			UsuarioDAO usuDAO = new UsuarioDAO(connection);
+			usuDAO.atualizar(usuario);
+			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+			dialogoInfo.setTitle("Mensagem");
+			dialogoInfo.setHeaderText("USUARIO EDITADO");
+			dialogoInfo.showAndWait();
+			MenuPrincipalController.STAGE_MENU_PRINCIPAL.close();
+			TelaLoginParaAtualizacaoController.STAGE_TELA_LOGIN_ATUALIZACAO.close();
+			Parent parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaLogin.fxml"));
+			Scene cena = new Scene(parent);
+			TelaLoginController.STAGE_LOGIN.setScene(cena);
+			TelaLoginController.STAGE_LOGIN.setTitle("");
+			TelaLoginController.STAGE_LOGIN.setResizable(false);
+			TelaLoginController.STAGE_LOGIN.show();
+			
+		} catch (CampoNaoPreenchidoException | PersistenciaException | IOException e) {
+			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+			dialogoInfo.setHeaderText(e.getMessage());
+			dialogoInfo.showAndWait();
+		}
+    	
 
 	}
 

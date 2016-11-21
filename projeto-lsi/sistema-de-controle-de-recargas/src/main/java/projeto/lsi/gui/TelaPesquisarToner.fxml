@@ -16,7 +16,7 @@
       <Label layoutX="44.0" layoutY="65.0" text="Modelo" />
       <ListView fx:id="listViewResultadosPesquisa" layoutX="43.0" layoutY="114.0" prefHeight="81.0" prefWidth="241.0" />
       <TextField fx:id="campoPesquisa" layoutX="88.0" layoutY="61.0" prefHeight="25.0" prefWidth="198.0" promptText="Diigite modelo do toner" />
-      <Button fx:id="botaoConsultar" layoutX="315.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Consultar" />
+      <Button fx:id="botaoConsultar" layoutX="315.0" layoutY="66.0" mnemonicParsing="false" onAction="#consultarToner" prefHeight="25.0" prefWidth="69.0" text="Consultar" />
       <Button fx:id="botaoEditar" layoutX="315.0" layoutY="101.0" mnemonicParsing="false" onAction="#editarToner" prefHeight="25.0" prefWidth="69.0" text="Editar" />
       <Button fx:id="botaoExcluir" layoutX="315.0" layoutY="136.0" mnemonicParsing="false" onAction="#excluirToner" prefHeight="25.0" prefWidth="69.0" text="Excluir" />
       <Button fx:id="botaoCancelar" layoutX="315.0" layoutY="171.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />

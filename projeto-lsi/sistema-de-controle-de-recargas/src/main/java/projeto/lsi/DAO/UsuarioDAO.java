@@ -73,10 +73,7 @@ public class UsuarioDAO implements GenericoDAO<Usuario>{
 				stmt.execute();
 				stmt.close();
 				connection.close();	
-				Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-		        dialogoInfo.setTitle("Mensagem");
-		        dialogoInfo.setHeaderText("USUARIO CADASTRADO");
-		        dialogoInfo.showAndWait();
+				
 			}else{
 				throw new LoginExistenteException();
 			}
@@ -214,22 +211,24 @@ public class UsuarioDAO implements GenericoDAO<Usuario>{
 	
 	
 	
-	public void deletar(Integer id) {
-		//try {
-			//PreparedStatement stmt =  connection.prepareStatement("delete from tb_usuario where idUsuario = ?");
-		//	stmt.setInt(1, Usuario.getUsuario().getIdUsuario());
-			//stmt.executeQuery();
-		//	stmt.close();
-			//connection.close();
+	public void deletar(Integer id) throws PersistenciaException {
+		try {
+			Connection connection;
+			connection = ConexaoFactory.getInstance().getConnection();
+			PreparedStatement stmt =  connection.prepareStatement("delete from tb_usuario where idUsuario = ?");
+			stmt.setInt(1, Usuario.getUsuario().getIdUsuario());
+			stmt.executeUpdate();
+			stmt.close();
+			connection.close();
 			//Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
 	        //dialogoInfo.setTitle("Mensagem");
 	        //dialogoInfo.setHeaderText("Usuário Excluído");
 	        //dialogoInfo.showAndWait();
-	       // System.exit(0);
+	        
 			
-	//	} catch (SQLException e) {
-			
-		//}
+		} catch (SQLException | PersistenciaException e) {
+			throw new PersistenciaException();
+		}
 		
 	}
 

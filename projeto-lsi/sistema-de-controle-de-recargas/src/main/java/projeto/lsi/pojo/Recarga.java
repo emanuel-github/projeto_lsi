@@ -1,25 +1,38 @@
 package projeto.lsi.pojo;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class Recarga {
 	
 	private Integer idRecarga;
-	private Date data;
+	private String modelo;
+	private Calendar data;
 	private Double preco;
 	private Double pesoInicial;
 	private Double pesoFinal;
-	private Integer idCartucho;
-	private Integer idToner;
-	private Cartucho cartucho;
-	private Toner toner;
+	private String dataString;
 	
 	
 	
-	public Date getData() {
+	public Integer getIdRecarga() {
+		return idRecarga;
+	}
+	public void setIdRecarga(Integer idRecarga) {
+		this.idRecarga = idRecarga;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	
+	public Calendar getData() {
 		return data;
 	}
-	public void setData(Date data) {
+	public void setData(Calendar data) {
 		this.data = data;
 	}
 	public Double getPreco() {
@@ -40,18 +53,7 @@ public class Recarga {
 	public void setPesoFinal(Double pesoFinal) {
 		this.pesoFinal = pesoFinal;
 	}
-	public Integer getIdCartucho() {
-		return idCartucho;
-	}
-	public void setIdCartucho(Integer idCartucho) {
-		this.idCartucho = idCartucho;
-	}
-	public Integer getIdToner() {
-		return idToner;
-	}
-	public void setIdToner(Integer idToner) {
-		this.idToner = idToner;
-	}
+	
 	
 	
 	

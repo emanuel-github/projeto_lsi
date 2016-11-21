@@ -58,9 +58,9 @@ public class TelaLoginParaAtualizacaoController implements Initializable{
 	
 	@FXML
 	public void chamaTelaEditarUsuario(ActionEvent event) {
-	//	UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
+		UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
 		try {
-			//usuarioDAO.logarParaAtualizar(campoLogin.getText(), campoSenha.getText());
+			usuarioDAO.logarParaAtualizar(campoLogin.getText(), campoSenha.getText());
 			Parent parent;
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaEditarUsuario.fxml"));
 			Scene cena = new Scene(parent);
@@ -68,11 +68,11 @@ public class TelaLoginParaAtualizacaoController implements Initializable{
 			STAGE_TELA_LOGIN_ATUALIZACAO.setTitle("");
 			STAGE_TELA_LOGIN_ATUALIZACAO.setResizable(false);
 			STAGE_TELA_LOGIN_ATUALIZACAO.show();						
-	//	} catch (LoginOuSenhaIvalidoException | PersistenciaException e1) {
-		//	Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-	     //   dialogoInfo.setTitle("Mensagem");
-	     //   dialogoInfo.setHeaderText(e1.getMessage());
-	     //   dialogoInfo.showAndWait();
+		} catch (LoginOuSenhaIvalidoException | PersistenciaException e1) {
+			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+	        dialogoInfo.setTitle("Mensagem");
+	        dialogoInfo.setHeaderText(e1.getMessage());
+	        dialogoInfo.showAndWait();
 		}catch (IOException e) {
 			e.printStackTrace();
 		}

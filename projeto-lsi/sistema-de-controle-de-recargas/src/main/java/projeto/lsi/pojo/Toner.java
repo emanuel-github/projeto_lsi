@@ -5,9 +5,15 @@ public class Toner {
 	private Integer idToner;
 	private String modelo;
 	private Double preco;
+	public static Toner toner;
 	
 	
-	
+	public static Toner getToner() {
+		return toner;
+	}
+	public static void setToner(Toner toner) {
+		Toner.toner = toner;
+	}
 	public Integer getIdToner() {
 		return idToner;
 	}
@@ -27,7 +33,10 @@ public class Toner {
 		this.preco = preco;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return idToner + ", modelo=" + modelo + ", preco=" + preco;
+	}
 	
 
 }

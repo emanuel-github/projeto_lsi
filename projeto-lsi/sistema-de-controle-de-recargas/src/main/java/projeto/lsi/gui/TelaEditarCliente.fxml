@@ -15,8 +15,8 @@
       </ImageView>
       <Label layoutX="115.0" layoutY="21.0" text="Editar Cliente" />
       <TextField fx:id="campoNome" layoutX="96.0" layoutY="71.0" prefHeight="25.0" prefWidth="149.0" promptText="Digite seu nome" />
-      <TextField fx:id="campoCpf" layoutX="96.0" layoutY="119.0" promptText="Digite seu cpf" />
       <TextField fx:id="campoEmail" layoutX="96.0" layoutY="171.0" promptText="Digite seu email" />
+      <TextField fx:id="campoCpf" layoutX="96.0" layoutY="119.0" promptText="Digite seu CPF" />
       <TextField fx:id="campoTelefone" layoutX="96.0" layoutY="219.0" promptText="Digite seu telefone" />
       <Label layoutX="42.0" layoutY="75.0" text="Nome" />
       <Label layoutX="46.0" layoutY="123.0" text="CPF" />

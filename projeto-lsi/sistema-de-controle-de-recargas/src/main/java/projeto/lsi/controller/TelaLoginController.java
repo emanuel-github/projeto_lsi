@@ -52,9 +52,9 @@ public class TelaLoginController implements Initializable{
 
 	    @FXML
 	    public void entrarMenu(ActionEvent event) {
-	    	//UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
+	    	UsuarioDAO usuarioDAO = new UsuarioDAO(connection);
 	    	try {
-				//usuarioDAO.logar(campoLogin.getText(), campoSenha.getText());
+				usuarioDAO.logar(campoLogin.getText(), campoSenha.getText());
 				STAGE_LOGIN.close();
 				Parent parent;				
 				parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/MenuPrincipal.fxml"));
@@ -63,13 +63,13 @@ public class TelaLoginController implements Initializable{
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setTitle("");
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.setResizable(false);
 				MenuPrincipalController.STAGE_MENU_PRINCIPAL.show();		
-			//} catch (LoginOuSenhaIvalidoException | PersistenciaException e1) {
-			//	Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
-		    //    dialogoInfo.setTitle("Mensagem");
-		    //    dialogoInfo.setHeaderText(e1.getMessage());
-		     //   dialogoInfo.showAndWait();
+			} catch (LoginOuSenhaIvalidoException | PersistenciaException e1) {
+				Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
+		        dialogoInfo.setTitle("Mensagem");
+		        dialogoInfo.setHeaderText(e1.getMessage());
+		        dialogoInfo.showAndWait();
 			} catch (IOException e) {
-	    		// TODO Auto-generated catch block
+	    		
 	    		e.printStackTrace();
 	    	}
 	    	
