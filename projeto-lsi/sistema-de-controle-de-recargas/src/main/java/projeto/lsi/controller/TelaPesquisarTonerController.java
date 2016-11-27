@@ -117,7 +117,7 @@ public class TelaPesquisarTonerController implements Initializable{
 	
 	@FXML
 	public void cancelar(ActionEvent event) {
-    	STAGE_PESQUISA_TONER.close();
+    	TelaMenuTonerController.STAGE_MENU_TONER.close();
     }
     
 

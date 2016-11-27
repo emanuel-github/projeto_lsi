@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -8,7 +9,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaCadastroDeClientesController">
    <children>
-      <ImageView fitHeight="271.0" fitWidth="284.0" opacity="0.26">
+      <ImageView fitHeight="271.0" fitWidth="284.0" opacity="0.1">
          <image>
             <Image url="@../imagens/CARTUCHO.jpg" />
          </image>
@@ -23,6 +24,9 @@
       <TextField fx:id="campoCpfCliente" layoutX="100.0" layoutY="92.0" promptText="Digite cpf" />
       <TextField fx:id="campoEmailCliente" layoutX="100.0" layoutY="134.0" promptText="Digite email" />
       <TextField fx:id="campoTelefoneCliente" layoutX="100.0" layoutY="179.0" promptText="Digite telefone" />
-      <Label layoutX="88.0" layoutY="14.0" text="Cadastro de Clientes" />
+      <Label layoutX="33.0" layoutY="3.0" text="Cadastro de Clientes">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
    </children>
 </Pane>

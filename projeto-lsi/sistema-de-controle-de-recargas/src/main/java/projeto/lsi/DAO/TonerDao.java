@@ -73,6 +73,29 @@ private Connection connection;
 		return toners;
 	}
 	
+	public List<Toner> buscartodosToners() throws CartuchoNaoEncontradoException, PersistenciaException{
+		List<Toner> toners = new ArrayList<>();
+		Connection connection;	
+		try {
+			connection = ConexaoFactory.getInstance().getConnection();
+			String sql = "select * from tb_toner";
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			ResultSet result = stmt.executeQuery();
+			while(result.next()){				
+				Toner toner = new Toner();
+				toner.setIdToner(result.getInt("idToner"));
+				toner.setModelo(result.getString("modelo"));
+				toner.setPreco(result.getDouble("preco"));
+				toners.add(toner);
+			}
+			connection.close();
+			stmt.close();
+		} catch (PersistenciaException | SQLException e) {
+			e.printStackTrace();
+			throw new PersistenciaException();
+		}
+		return toners;
+	}
 	
 	
 	public void deletar(Integer id) throws PersistenciaException {

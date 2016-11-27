@@ -118,7 +118,7 @@ public class TelaPesquisaClienteController implements Initializable{
 		}
 		Cliente.cliente= listViewResultadosPesquisa.getSelectionModel().getSelectedItem();
 		listViewResultadosPesquisa.getItems().remove(Cliente.cliente);		
-
+		
 	}
 	
 	@FXML

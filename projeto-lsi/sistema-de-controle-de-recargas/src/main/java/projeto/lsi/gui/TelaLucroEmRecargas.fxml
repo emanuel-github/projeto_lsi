@@ -1,29 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaLucroEmRecargasController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaLucroEmRecargasController">
    <children>
       <ImageView fitHeight="75.0" fitWidth="174.0" layoutY="5.0" opacity="0.3">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="75.0" fitWidth="174.0" layoutX="165.0" layoutY="191.0" opacity="0.4" rotate="180.0">
+      <ImageView fitHeight="75.0" fitWidth="174.0" layoutX="423.0" layoutY="342.0" opacity="0.4" rotate="180.0">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="52.0" layoutY="88.0" text="Data inicial" />
-      <Label layoutX="52.0" layoutY="140.0" text="Data final" />
-      <Button fx:id="botaoCancelar" layoutX="46.0" layoutY="197.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Button fx:id="botaoConsultar" layoutX="228.0" layoutY="197.0" mnemonicParsing="false" text="Consultar" />
-      <Label layoutX="120.0" layoutY="25.0" text="Lucro em Recargas" />
-      <DatePicker fx:id="dataInicial" layoutX="121.0" layoutY="84.0" />
-      <DatePicker fx:id="dataFinal" layoutX="121.0" layoutY="136.0" />
+      <Label layoutX="78.0" layoutY="63.0" text="Data inicial" />
+      <Label layoutX="464.0" layoutY="63.0" text="Data final" />
+      <Button fx:id="botaoCancelar" layoutX="26.0" layoutY="367.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="botaoConsultar" layoutX="503.0" layoutY="367.0" mnemonicParsing="false" onAction="#mostrarLucro" text="Consultar" />
+      <Label layoutX="180.0" layoutY="28.0" text="Lucro em Recargas">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <DatePicker fx:id="dataInicial" layoutX="20.0" layoutY="93.0" />
+      <DatePicker fx:id="dataFinal" layoutX="402.0" layoutY="93.0" />
+      <Label fx:id="labelRecCartuchos" layoutX="21.0" layoutY="187.0" text="Lucro em Recargas de Cartucho:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelREcToner" layoutX="19.0" layoutY="228.0" text="Lucro em Recargas de Toner:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLucroTotal" layoutX="21.0" layoutY="270.0" text="Lucro Total:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="textRecCart" layoutX="405.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="textRecToner" layoutX="405.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="textTotal" layoutX="405.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelQuantidade" layoutX="489.0" layoutY="140.0" text="Quantidade">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="textQtdRecCartucho" layoutX="536.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text fx:id="textQtdRecToner" layoutX="536.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Text fx:id="TextTotalRecargas" layoutX="536.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
    </children>
 </Pane>

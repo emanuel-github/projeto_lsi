@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasTonerController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasTonerController">
    <children>
-      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="2.0" layoutY="6.0" opacity="0.32">
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="2.0" layoutY="6.0" opacity="0.17">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="209.0" layoutY="210.0" opacity="0.46" rotate="180.0">
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="317.0" layoutY="360.0" opacity="0.23" rotate="180.0">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <DatePicker fx:id="dataInicial" layoutX="139.0" layoutY="90.0" />
-      <DatePicker fx:id="dataFinal" layoutX="139.0" layoutY="171.0" />
-      <Label layoutX="127.0" layoutY="27.0" text="Estatísticas de recarga de toner" />
-      <Label layoutX="52.0" layoutY="94.0" text="Data inicial" />
-      <Label layoutX="52.0" layoutY="175.0" text="Data final" />
-      <Button fx:id="botaoCancelar" layoutX="253.0" layoutY="228.0" mnemonicParsing="false" text="Consultar" />
-      <Button fx:id="botaoCancelar" layoutX="106.0" layoutY="228.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <DatePicker fx:id="dataInicial" layoutX="15.0" layoutY="81.0" />
+      <DatePicker fx:id="dataFinal" layoutX="317.0" layoutY="81.0" />
+      <Label layoutX="92.0" layoutY="5.0" text="Estatísticas de recarga de toner">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="54.0" text="Data inicial" />
+      <Label layoutX="378.0" layoutY="54.0" text="Data final" />
+      <Button fx:id="botaoCancelar" layoutX="417.0" layoutY="373.0" mnemonicParsing="false" onAction="#mostrarRecargasToner" text="Consultar" />
+      <Button fx:id="botaoCancelar" layoutX="24.0" layoutY="373.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <ListView fx:id="listViewRecargaToner" layoutX="10.0" layoutY="126.0" prefHeight="173.0" prefWidth="494.0" />
+      <Label fx:id="totalRecargasToner" layoutX="317.0" layoutY="325.0" text="Total de Recargas:" />
+      <Text fx:id="texto" layoutX="451.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
    </children>
 </Pane>

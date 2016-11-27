@@ -67,7 +67,7 @@ public class TelaCadastrarCartuchoController implements Initializable {
 	
 	@FXML
 	public void cancelar(ActionEvent event){
-		STAGE_CADASTRAR_CARTUCHO.close();
+		TelaMenuCartuchoController.STAGE_MENU_CARTUCHO.close();
 		
 	}
 	

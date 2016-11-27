@@ -72,7 +72,7 @@ public class TelaCadastrarTonerController implements Initializable{
     
     @FXML
 	public void cancelar(ActionEvent event){
-		STAGE_CADASTRAR_TONER.close();
+		TelaMenuTonerController.STAGE_MENU_TONER.close();
 		
 	}
 	

@@ -18,6 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import projeto.lsi.DAO.UsuarioDAO;
 import projeto.lsi.Exception.CampoNaoPreenchidoException;
+import projeto.lsi.Exception.EmailInvalidoException;
 import projeto.lsi.Exception.PersistenciaException;
 import projeto.lsi.logica.UsuarioBO;
 import projeto.lsi.pojo.Usuario;
@@ -90,7 +91,7 @@ public class TelaCadastrarUsuarioController implements Initializable{
     		TelaLoginController.STAGE_LOGIN.setTitle("");
     		TelaLoginController.STAGE_LOGIN.setResizable(false);
     		TelaLoginController.STAGE_LOGIN.show();
-    	} catch (CampoNaoPreenchidoException | PersistenciaException |IOException e1) {
+    	} catch (CampoNaoPreenchidoException | PersistenciaException |IOException | EmailInvalidoException e1) {
     		Alert dialogo = new Alert(Alert.AlertType.INFORMATION);
     		dialogo.setTitle("Mensagem");
     		dialogo.setHeaderText(e1.getMessage());

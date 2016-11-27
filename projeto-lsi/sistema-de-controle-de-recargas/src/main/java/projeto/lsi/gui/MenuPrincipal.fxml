@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.MenuPrincipalController">
+<AnchorPane prefHeight="639.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.MenuPrincipalController">
    <children>
-      <ImageView fx:id="imagemMenuPrincipal" fitHeight="377.0" fitWidth="384.0" layoutX="7.0" layoutY="9.0" opacity="0.37" pickOnBounds="true" smooth="false">
+      <ImageView fx:id="imagemMenuPrincipal" fitHeight="639.0" fitWidth="958.0" layoutX="-2.0" layoutY="-1.0" opacity="0.37" pickOnBounds="true" smooth="false">
          <image>
             <Image url="@../imagens/ImagemMenuPrincipal.jpg" />
          </image>
@@ -48,9 +48,9 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Label layoutX="45.0" layoutY="218.0" prefHeight="93.0" prefWidth="303.0" text="New Print">
+      <Label layoutX="306.0" layoutY="480.0" prefHeight="105.0" prefWidth="343.0" text="New Print">
          <font>
-            <Font size="64.0" />
+            <Font size="72.0" />
          </font>
          <textFill>
             <RadialGradient centerX="0.47777777777777775" centerY="0.2142857142857143" cycleMethod="REPEAT" radius="0.5">

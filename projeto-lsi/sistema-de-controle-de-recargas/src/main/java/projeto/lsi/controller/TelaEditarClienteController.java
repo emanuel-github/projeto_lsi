@@ -13,6 +13,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import projeto.lsi.DAO.ClienteDAO;
 import projeto.lsi.Exception.CampoNaoPreenchidoException;
+import projeto.lsi.Exception.CpfInvalidoException;
+import projeto.lsi.Exception.EmailInvalidoException;
 import projeto.lsi.Exception.PersistenciaException;
 import projeto.lsi.logica.ClienteBO;
 import projeto.lsi.pojo.Cliente;
@@ -64,7 +66,7 @@ public class TelaEditarClienteController implements Initializable{
     		campoCpf.setText("");
     		campoEmail.setText("");
     		campoTelefone.setText("");    		
-    	} catch (PersistenciaException | CampoNaoPreenchidoException e) {
+    	} catch (PersistenciaException | CampoNaoPreenchidoException | CpfInvalidoException | EmailInvalidoException e) {
     		Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
     		dialogoInfo.setHeaderText(e.getMessage());
     		dialogoInfo.showAndWait();
