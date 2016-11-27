@@ -33,10 +33,10 @@ public class TelaMenuTonerController implements Initializable {
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastrarToner.fxml"));
 			Scene cena = new Scene(parent);
-			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.setScene(cena);
-			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.setTitle("");
-			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.setResizable(false);
-			TelaCadastrarTonerController.STAGE_CADASTRAR_TONER.show();						
+			STAGE_MENU_TONER.setScene(cena);
+			STAGE_MENU_TONER.setTitle("");
+			STAGE_MENU_TONER.setResizable(false);
+			STAGE_MENU_TONER.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -52,10 +52,10 @@ public class TelaMenuTonerController implements Initializable {
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaPesquisarToner.fxml"));
 			Scene cena = new Scene(parent);
-			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.setScene(cena);
-			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.setTitle("");
-			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.setResizable(false);
-			TelaPesquisarTonerController.STAGE_PESQUISA_TONER.show();						
+			STAGE_MENU_TONER.setScene(cena);
+			STAGE_MENU_TONER.setTitle("");
+			STAGE_MENU_TONER.setResizable(false);
+			STAGE_MENU_TONER.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

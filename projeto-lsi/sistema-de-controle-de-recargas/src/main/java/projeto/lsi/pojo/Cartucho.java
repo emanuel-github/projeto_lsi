@@ -35,7 +35,7 @@ public class Cartucho {
 	}
 	@Override
 	public String toString() {
-		return idCartucho + ", modelo=" + modelo + ", preco=" + preco;
+		return "ID: " + idCartucho + ", modelo: " + modelo + ", preco recarga: R$" + preco;
 	}
 	
 	

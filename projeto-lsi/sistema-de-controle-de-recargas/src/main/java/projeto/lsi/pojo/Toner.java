@@ -35,7 +35,7 @@ public class Toner {
 	
 	@Override
 	public String toString() {
-		return idToner + ", modelo=" + modelo + ", preco=" + preco;
+		return "ID: " + idToner + ", modelo: " + modelo + ", preco recarga: R$" + preco;
 	}
 	
 

@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaRecargaTonerController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaRecargaTonerController">
    <children>
-      <ImageView fitHeight="351.0" fitWidth="305.0" layoutY="1.0" opacity="0.18">
+      <ImageView fitHeight="272.0" fitWidth="416.0" layoutY="1.0" opacity="0.18">
          <image>
             <Image url="@../imagens/CARTUCHO.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="98.0" layoutY="24.0" text="Recarga Toner" />
-      <TextField fx:id="campoPesoInicial" layoutX="110.0" layoutY="150.0" promptText="peso antes da recarga" />
-      <TextField fx:id="campoPreco" layoutX="110.0" layoutY="105.0" promptText="preço da recarga" />
-      <TextField fx:id="campoModelo" layoutX="110.0" layoutY="60.0" promptText="Digite modelo toner" />
-      <Label layoutX="44.0" layoutY="154.0" text="peso inicial" />
-      <Label layoutX="44.0" layoutY="109.0" text="preço" />
-      <Label layoutX="44.0" layoutY="64.0" text="Modelo" />
-      <Button fx:id="botaoRecarregar" layoutX="185.0" layoutY="285.0" mnemonicParsing="false" onAction="#recarga" text="Recarregar" />
-      <Button fx:id="botaoCancelar" layoutX="38.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Label layoutX="45.0" layoutY="198.0" text="peso final" />
-      <TextField fx:id="campoPesoFinal" layoutX="111.0" layoutY="194.0" promptText="peso após a recarga" />
+      <Label layoutX="132.0" layoutY="14.0" text="Recarga Toner">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="campoPesoInicial" layoutX="94.0" layoutY="112.0" prefHeight="25.0" prefWidth="294.0" promptText="peso antes da recarga" />
+      <Label layoutX="20.0" layoutY="116.0" text="peso inicial" />
+      <Label layoutX="24.0" layoutY="64.0" prefHeight="17.0" prefWidth="51.0" text="Modelo" />
+      <Button fx:id="botaoRecarregar" layoutX="314.0" layoutY="229.0" mnemonicParsing="false" onAction="#recarga" text="Recarregar" />
+      <Button fx:id="botaoCancelar" layoutX="36.0" layoutY="229.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="23.0" layoutY="167.0" text="peso final" />
+      <TextField fx:id="campoPesoFinal" layoutX="94.0" layoutY="164.0" prefHeight="25.0" prefWidth="294.0" promptText="peso após a recarga" />
+      <ComboBox fx:id="comboToner" layoutX="94.0" layoutY="60.0" prefHeight="25.0" prefWidth="294.0" promptText="---" />
    </children>
 </Pane>

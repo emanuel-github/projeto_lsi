@@ -120,7 +120,7 @@ public class TelaPesquisarCartuchoController implements Initializable {
     
     @FXML
 	public void cancelar(ActionEvent event) {
-    	STAGE_PESQUISA_CARTUCHO.close();
+    	TelaMenuCartuchoController.STAGE_MENU_CARTUCHO.close();
     }
     
     

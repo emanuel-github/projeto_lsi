@@ -35,10 +35,10 @@ public class TelaMenuCartuchoController implements Initializable{
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaCadastrarCartucho.fxml"));
 			Scene cena = new Scene(parent);
-			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.setScene(cena);
-			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.setTitle("");
-			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.setResizable(false);
-			TelaCadastrarCartuchoController.STAGE_CADASTRAR_CARTUCHO.show();						
+			STAGE_MENU_CARTUCHO.setScene(cena);
+			STAGE_MENU_CARTUCHO.setTitle("");
+			STAGE_MENU_CARTUCHO.setResizable(false);
+			STAGE_MENU_CARTUCHO.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -52,10 +52,10 @@ public class TelaMenuCartuchoController implements Initializable{
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaPesquisarCartucho.fxml"));
 			Scene cena = new Scene(parent);
-			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.setScene(cena);
-			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.setTitle("");
-			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.setResizable(false);
-			TelaPesquisarCartuchoController.STAGE_PESQUISA_CARTUCHO.show();						
+			STAGE_MENU_CARTUCHO.setScene(cena);
+			STAGE_MENU_CARTUCHO.setTitle("");
+			STAGE_MENU_CARTUCHO.setResizable(false);
+			STAGE_MENU_CARTUCHO.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -17,6 +17,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import projeto.lsi.DAO.ClienteDAO;
 import projeto.lsi.Exception.CampoNaoPreenchidoException;
+import projeto.lsi.Exception.CpfInvalidoException;
+import projeto.lsi.Exception.EmailInvalidoException;
 import projeto.lsi.Exception.PersistenciaException;
 import projeto.lsi.logica.ClienteBO;
 import projeto.lsi.pojo.Cliente;
@@ -81,7 +83,7 @@ public class TelaCadastroDeClientesController implements Initializable{
 		campoCpfCliente.setText("");
 		campoEmailCliente.setText("");
 		campoTelefoneCliente.setText("");
-		} catch (CampoNaoPreenchidoException | PersistenciaException e) {
+		} catch (CampoNaoPreenchidoException | PersistenciaException | CpfInvalidoException | EmailInvalidoException e) {
 			Alert dialogoInfo = new Alert(Alert.AlertType.INFORMATION);
 			dialogoInfo.setHeaderText(e.getMessage());
 			dialogoInfo.showAndWait();

@@ -36,10 +36,10 @@ public class TelaMenuRecargaController implements Initializable{
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaRecargaCartucho.fxml"));
 			Scene cena = new Scene(parent);
-			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.setScene(cena);
-			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.setTitle("");
-			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.setResizable(false);
-			TelaRecargaCartuchoController.STAGE_RECARGA_CARTUCHO.show();						
+			STAGE_MENU_RECARGA.setScene(cena);
+			STAGE_MENU_RECARGA.setTitle("");
+			STAGE_MENU_RECARGA.setResizable(false);
+			STAGE_MENU_RECARGA.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -54,10 +54,10 @@ public class TelaMenuRecargaController implements Initializable{
 		try {			
 			parent = FXMLLoader.load(getClass().getResource("/projeto/lsi/gui/TelaRecargaToner.fxml"));
 			Scene cena = new Scene(parent);
-			TelaRecargaTonerController.STAGE_RECARGA_TONER.setScene(cena);
-			TelaRecargaTonerController.STAGE_RECARGA_TONER.setTitle("");
-			TelaRecargaTonerController.STAGE_RECARGA_TONER.setResizable(false);
-			TelaRecargaTonerController.STAGE_RECARGA_TONER.show();						
+			STAGE_MENU_RECARGA.setScene(cena);
+			STAGE_MENU_RECARGA.setTitle("");
+			STAGE_MENU_RECARGA.setResizable(false);
+			STAGE_MENU_RECARGA.show();						
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

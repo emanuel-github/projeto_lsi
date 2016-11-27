@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasCartuchoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.lsi.controller.TelaEstatisticasCartuchoController">
    <children>
       <ImageView fitHeight="75.0" fitWidth="200.0" layoutY="4.0" opacity="0.32">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="153.0" layoutY="181.0" opacity="0.37" rotate="180.0">
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="279.0" layoutY="333.0" opacity="0.37" rotate="180.0">
          <image>
             <Image url="@../imagens/CARTUCHOS.jpg" />
          </image>
       </ImageView>
-      <DatePicker fx:id="dataFinal" layoutX="127.0" layoutY="132.0" />
-      <DatePicker fx:id="dataInicial" layoutX="127.0" layoutY="80.0" />
-      <Label layoutX="89.0" layoutY="24.0" text="Estatísticas de Recargas de Cartucho" />
-      <Button fx:id="botaoConsultar" layoutX="234.0" layoutY="193.0" mnemonicParsing="false" text="Consultar" />
-      <Button fx:id="botaoCancelar" layoutX="52.0" layoutY="193.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Label layoutX="58.0" layoutY="136.0" text="Data final" />
-      <Label layoutX="58.0" layoutY="84.0" text="Data inicial" />
+      <DatePicker fx:id="dataFinal" layoutX="279.0" layoutY="80.0" />
+      <DatePicker fx:id="dataInicial" layoutX="29.0" layoutY="80.0" />
+      <Label layoutX="47.0" layoutY="3.0" text="Estatísticas de Recargas de Cartucho">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="botaoConsultar" layoutX="384.0" layoutY="370.0" mnemonicParsing="false" onAction="#mostrarRecargasCartucho" text="Consultar" />
+      <Button fx:id="botaoCancelar" layoutX="39.0" layoutY="370.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="334.0" layoutY="52.0" text="Data final" />
+      <Label layoutX="70.0" layoutY="52.0" text="Data inicial" />
+      <ListView fx:id="listViewRecargasCartucho" layoutX="15.0" layoutY="125.0" prefHeight="172.0" prefWidth="449.0" />
+      <Label fx:id="labelTotalRecargas" layoutX="279.0" layoutY="316.0" text="Total de Recargas:" />
+      <Text fx:id="texto" layoutX="406.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
    </children>
 </Pane>

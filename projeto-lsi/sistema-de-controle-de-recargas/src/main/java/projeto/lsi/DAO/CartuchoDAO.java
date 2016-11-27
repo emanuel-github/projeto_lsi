@@ -75,6 +75,31 @@ public class CartuchoDAO implements GenericoDAO<Cartucho> {
 	}
 	
 	
+	public List<Cartucho> buscartodosCartuchos() throws CartuchoNaoEncontradoException, PersistenciaException{
+		List<Cartucho> cartuchos = new ArrayList<>();
+		Connection connection;	
+		try {
+			connection = ConexaoFactory.getInstance().getConnection();
+			String sql = "select * from tb_cartucho";
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			ResultSet result = stmt.executeQuery();
+			while(result.next()){				
+				Cartucho cartucho = new Cartucho();
+				cartucho.setIdCartucho(result.getInt("idCartucho"));
+				cartucho.setModelo(result.getString("modelo"));
+				cartucho.setPreco(result.getDouble("preco"));
+				cartuchos.add(cartucho);
+			}
+			connection.close();
+			stmt.close();
+		} catch (PersistenciaException | SQLException e) {
+			e.printStackTrace();
+			throw new PersistenciaException();
+		}
+		return cartuchos;
+	}
+	
+	
 	
 	
 	public void deletar(Integer id) throws PersistenciaException {

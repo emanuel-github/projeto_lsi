@@ -53,6 +53,14 @@ public class Recarga {
 	public void setPesoFinal(Double pesoFinal) {
 		this.pesoFinal = pesoFinal;
 	}
+	@Override
+	public String toString() {
+		return "MODELO: " + modelo + " | preco: R$" + preco + " | Peso Inicial: " + pesoInicial + " | Peso Final: "
+				+ pesoFinal;
+	}
+	
+	
+	
 	
 	
 	
